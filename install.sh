@@ -30,8 +30,7 @@ echo 'Acquire::https::Timeout "10";' >> /etc/apt/apt.conf.d/80-retries
 echo 'APT::Acquire::Retries "3";' >> /etc/apt/apt.conf.d/80parallel
 echo 'Acquire::Queue-Mode "access";' >> /etc/apt/apt.conf.d/80parallel
 
-apt-get update -y
-apt-get install -y strongswan xl2tpd ppp iptables curl
+sudo apt-get install -y strongswan xl2tpd ppp iptables curl
 
 echo -e "${GREEN}✅ Speed Install Completed${NC}"
 
